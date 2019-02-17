@@ -21,7 +21,7 @@ module.exports = {
         rules:[
             {test:/\.css$/,use:['style-loader','css-loader']},
             {test:/\.less$/,use:['style-loader','css-loader','less-loader']},
-            { test: /\.(png|jpg|gif)$/, use: 'url-loader' },
+            // { test: /\.(png|jpg|gif)$/, use: 'url-loader' },
             { test: /\.(png|jpg|gif)$/, use: 'url-loader?limit=43960' },
             { test: /\.js$/, use: 'babel-loader', exclude: /node_modules/ },
             { test: /\.(ttf|eot|svg|woff|woff2)$/, use: 'url-loader' }, 
